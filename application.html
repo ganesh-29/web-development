@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLICATION</title>
+    <style>
+           body {
+            margin: 275px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            border: 2px solid black;
+            width:650px;
+            padding: 10px;
+        }
+    
+    </style>
+    <script>
+        function myfunction(){
+            alert("successfully submitted");
+        }
+    </script>
+</head>
+<body>
+    <h3 style="text-align: center;">STUDENT APPLICATION</h3>
+    <form>
+    <div>
+        <label for="Name">Name of the student :</label>
+        <input type="text" id="Name">
+    </div><br>
+    <div>
+        <label for="Age">Age :</label>
+        <input type="text" id="Age">
+    </div><br>
+    <div>
+        <label for="Father">Father name :</label>
+        <input type="text" id="Father">
+    </div><br>
+    <div>
+        <label for="mother">Mother name :</label>
+        <input type="text" id="mother">
+    </div><br>
+    <div>
+        Gender : 
+        <label for="male">Male</label><input type="radio" id="male" name="Gender" >
+        <label for="female">Female</label><input type="radio" id="female" name="Gender">
+    </div><br>
+    <div>
+        <label for="address">Write your address :</label><br>
+        <textarea name="Write your address" id="address" cols="40" rows="7"></textarea>
+    </div><br>
+    <div>
+        <label for="mobile">Mobile no :</label>
+        <input type="text" id="mother">
+        
+    </div><br>
+    <div>
+        <label for="submits"></label>
+        <input onclick="myfunction()" type="submit" id="submits" value="Submit">
+        <label for="resets"></label>
+        <input type="reset" id="resets">
+    </div><br>
+</form>
+</body>
+</html>
